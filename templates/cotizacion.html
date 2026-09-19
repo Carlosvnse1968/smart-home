@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>
+
+Solicita una Cotización
+
+</h1>
+
+/enviar
+
+<input
+name="nombre"
+placeholder="Nombre"
+required>
+
+<input
+type="email"
+name="correo"
+placeholder="Correo"
+required>
+
+<input
+name="telefono"
+placeholder="Teléfono"
+required>
+
+<select name="tipo_inmueble">
+
+<option>Departamento</option>
+<option>Casa</option>
+<option>Oficina</option>
+
+</select>
+
+<textarea
+name="comentarios"
+placeholder="Describe tu proyecto">
+
+</textarea>
+
+<button type="submit">
+
+Enviar
+
+</button>
+
+</form>
+
+{% endblock %}
